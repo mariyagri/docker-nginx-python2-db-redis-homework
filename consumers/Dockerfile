@@ -1,7 +1,8 @@
-FROM python:3.7.15-alpine3.17
+FROM python:2.7-stretch
 
 # uWSGI:
 USER root
+RUN /usr/local/bin/python -m pip install --upgrade pip
 RUN pip install uwsgi
 
 # Copy the base uWSGI ini file to enable default dynamic uwsgi process number

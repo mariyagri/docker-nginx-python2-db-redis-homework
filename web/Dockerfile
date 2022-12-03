@@ -72,4 +72,4 @@ ARG WORK_DIR=/var/www
 RUN usermod -u 1000 www-data
 WORKDIR ${WORK_DIR}
 CMD [ "uwsgi" ]
-PORT 9000
+EXPOSE 9000
