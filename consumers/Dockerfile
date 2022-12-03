@@ -1,4 +1,5 @@
-FROM python:2.7-stretch
+FROM python:3.7.15-alpine3.17
+
 # uWSGI:
 USER root
 RUN pip install uwsgi
